@@ -1,0 +1,7 @@
+everything in flutter is a widget,  also flutter was called "UI kit"
+compare between       Native       &    CrossPlatform (Flutter)
+Performance           same              same
+size                  less              bigger but not so much   for ex  native 2mb , flutter 10mb
+resources             same              same  
+IOS & android         support one       support both
+speed to production   slow              fast
