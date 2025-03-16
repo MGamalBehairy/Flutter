@@ -1,0 +1,12 @@
+you can run the project using shortcut  ctrl + alt + n   
+but first u need to be on the file u want to run
+
+or u can run also from the right-top icon     run & debug   the output will be shown in the debug console
+
+and if u tried to run from the left side bar, u will get an error,    cuz it save a structure that can run  which is      "  lib/main.dart  "   , and if u have main.dart without lib folder , it can't find the path so u will get an error
+also if u didn't insert   main.dart file   or didn't type the main function ,    u will get an error too!
+
+also u can run the file through the terminal
+=>>  dart  path
+ex.
+=>>  dart lib/main.dart
