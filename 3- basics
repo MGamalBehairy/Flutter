@@ -1,0 +1,6 @@
+to create new project
+go to project folder and type in the path =>> cmd
+cmd =>>  flutter create  project_name
+
+after the project folder created,   go to this folder and type in the path again =>> cmd
+cmd =>> code .           this will open this project on the VS code
