@@ -1,0 +1,22 @@
+how to create custom widget   like   Text(),  Center(), AppBar(),  ....
+becase we don't need to write all code in the runApp() widget
+
+
+Types of Widget:-
+
+1- StatelessWidget                                                                  2- stateful widget
+
+StatelessWidget =>> it's a new widget and take name for this widget
+                    - it's a Class
+
+
+try to type stateless and then choose it from choices
+
+Class HelloWorldApp extends StatelessWidget{
+  HelloWorldApp();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
