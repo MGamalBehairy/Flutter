@@ -18,3 +18,8 @@ void main(){
     ),
   );
 }
+
+scaffold  =>> create new screen
+            - split the screen into 3 parts (AppBar, body, floatingActionButton)
+            - implements the instructions of MaterialApp,  without it , nothing will be changed
+            - each scaffold  = one screen
