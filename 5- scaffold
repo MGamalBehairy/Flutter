@@ -1,0 +1,20 @@
+scaffold widget =>> is the widget responisble for applying MAterialApp instructios
+it implements the guidlines of MaterialApp,   so without scaffold, there will be no effect for MaterialApp
+the application contain more than one screen,   and scaffold create screen
+so if u have 3 scaffold then u hae 3 screens ... and so on
+
+void main(){
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        floatingActionButton: FloatingActionButton( onPressed: (){}, ),
+        appBar: AppBar(
+            title: Text("NearBY_U")
+        ),
+        body: Center(
+            child: Text('Hello World'),
+        ),
+      ),
+    ),
+  );
+}
