@@ -1,0 +1,50 @@
+void main(){
+  runApp(app);                  // we must and always use this function ,   and accept parameter (which this parameter is widget),   so the function accept the widget and run it  =>> يعني التطبيق بتاعي كله عبارة عن ال parameter دا
+}
+
+so we will replace "app" parameter with out code application
+
+and first thing insert "MaterialApp()" widget, and import the library of MaterialApp   
+
+void main(){
+  runApp(
+    MaterialApp()
+  );
+}
+يعني خطوات ثابتة بتعملها اول ما بتعمل مشروع جديد ، الجزء اللي فوق دا كله ثابت
+so MaterialApp is a widget     ,   and the widget is a Class                    widget = class
+
+
+MaterialApp()  =>> is very very important ,  it's the core of the application
+                  it provides me instructions (guidlines) to use ,  if i want to use text ,  the text will take the instruction from MaterialApp (شكل الخط ، الحجم ....)
+                  - Anonymous Object
+                  - accept attributes (home: , )
+home attribute  is the display screen الشاشة بتاعتك نفسها
+if u want to display text,  then insert Text widget  ( and we know the widget is a class   so it will be like this =>> Text()  )
+
+              MaterialApp(home: Text()  )    // as u can see , Text() it's also an anonymous object,  because we will not use it again,    but  u can  make it normla object if u want 
+import 'package:flutter/material.dart';
+
+void main() {
+  // Text text = Text();    if u left Text() empty, u will get an error, becuase if u hover on it, u will see it must accept "data"
+  Text text = Text("Hello World");
+  runApp(MaterialApp(
+    home: text,
+  ));
+}
+
+so the anonymous object is very good way to use,   save much time!
+
+
+
+
+any widget displayed will be in the top-left,    so if we need to center it , use  Center() widget ,      and u will see it accept many optional attributes,  use   child() widget
+void main(){
+  runApp(
+    MaterialApp(
+      home: Center(
+        child: Text("Hello World")
+      ),      // بنستخدم ال ","  عشان  ننزل سطر  جديد   ،  عشان الشكل يبقي حلو  ، لو مستخدمتش ال كوما هنا  هتلاقي ال سنتر كله في سطر واحد
+    ), ولو مستخدمتش ال كوما هنا  هتلاقي ال MaterialApp في سطر واحد
+  );
+}
