@@ -26,4 +26,4 @@ Class HelloWorldApp extends StatelessWidget{
 in the StatelessWidget there is " build" method: and it's respoinsible for building the Widgets  
 
 
-so the custom widget is non-existing widget (by default) 
+so the custom widget is non-existing widget (by default) that contain widgets u choose, using StatlessWidget that contain build method which builds the Widgets
