@@ -1,0 +1,8 @@
+hot reload =>> is immediate change happens after changing the UI, apply changes in build method  in no time
+
+when u change anything if the UI code,   dart highlight this part as a "dirty"    then look for the nearest "build" method from this change,   then rerun this build() method again
+
+لما بتغير حاجه في جزء ال UI
+دارت  بيعلم علي الجزء دا كـ dirty
+وبعدين بيدور علي اقرب build  للجزء  اللي متغير دا 
+وبعدين يشغل الجزء دا بس     rerun build method
