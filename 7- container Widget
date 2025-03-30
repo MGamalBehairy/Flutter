@@ -1,0 +1,14 @@
+container widget دا بيبقي  حاوية  او  اطار  خارجي   بنحط  جواه  widget
+وبنتحكم في شكل الاطار container دا زي ما احنا عايزين
+نديله color,  height, width
+
+
+
+ملحوظة مهمة
+لو  ال  attribute جوا  الكلاس  كان  static =>  تقدر توصل  لل  attribute  دا  من خلال الكلاس نفسه  مش لازم  object يعني كدا علطول     ClassName.attribute
+
+
+
+ملحوظة  تانيه
+اي حاجه بتتعرض علي الشاشة  بتبقي موجوده في ال top-left بالنسبة لل parent بتاعها
+
