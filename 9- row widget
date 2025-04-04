@@ -21,3 +21,11 @@ so now the x-axis =>>> main axis
 NOTE:  containers  are centered in the "Cross axis" by default 
 so u don't need to do this
 corssAxisAlignment: CrossAxisAlignment.center        ==>> cuz its default in the cross axis
+
+
+
+
+to resize the main axis size  يعني المساحة اللي ال containers كلها هتاخدها من الشاشه
+تقدر تحددها عن طريق
+mainAxisSize: MainAxisSize.min    كدا هتاخد علي قد مساحة ال containers (childreds) بالظبط
+mainAxisSize: MainAxisSize.max    كدا هياخد مساحة الشاشه كلها بتاعت ال parent
