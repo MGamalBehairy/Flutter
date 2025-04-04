@@ -1,5 +1,11 @@
 if u want many container widget on the screen, then u need to use "column widget" and within it use  "children" List
 
+
+x-axis  =>>  cross axis
+y-axis  =>>  main axis
+
+mainAxisAlignment
+
 class HelloWorldApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
