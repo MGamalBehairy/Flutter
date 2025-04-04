@@ -1,0 +1,13 @@
+if u want many container widget on the screen, then u need to use "column widget" and within it use  "children" List
+
+class HelloWorldApp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold (
+        body: Column(
+          children
+        )
+      )
+    )
+  }
+}
