@@ -1,0 +1,17 @@
+row widget also same as "column" but make the container horizontaly (side-by-side)
+
+وبياخد عرض الشاشه كلها ، وبياخد   طول اكبر container
+
+عكس ال column widget
+بياخد طول الشاشة كلها  ،  لكن بياخد  اكبر عرض container
+وباقي ال containers ببتمشي علي اكبر عرض container
+
+
+very IMP.
+so now the x-axis =>>> main axis
+  and the  y-axis =>>> cross axis
+
+  becuase the widget now sorted on the x-axis ,  so the x-axis is the main axis
+
+
+  but in the column widget,   the containers sorted in the y-axis, thats why- in column widget, y-axis is the main axis
