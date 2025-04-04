@@ -15,3 +15,9 @@ so now the x-axis =>>> main axis
 
 
   but in the column widget,   the containers sorted in the y-axis, thats why- in column widget, y-axis is the main axis
+
+
+
+NOTE:  containers  are centered in the "Cross axis" by default 
+so u don't need to do this
+corssAxisAlignment: CrossAxisAlignment.center        ==>> cuz its default in the cross axis
