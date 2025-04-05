@@ -1,0 +1,37 @@
+to add iamge to ur app,  u need to add the image to the "pubspec.yaml" first
+add "assests" section in the pubspec.yaml
+then add the path to the image
+
+assets:
+  - images/path/to/the/project (copy relative path)
+  - images/birthday.jpg
+
+
+
+  also to add background color in the Scaffold
+
+  Scaffold {
+    backgroundColor: Color(0xFF)    // after FF  add the hexa of the color
+  }
+
+
+
+  so the final resilt of the app is:
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(BirthdayCard());
+}
+class BirthdayCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color(0xffD2BCD5),
+        body: Center(child: Image(image: AssetImage('images/birthday.png'),)),
+      ),
+    );
+  }
+}
