@@ -1,0 +1,39 @@
+Padding Effect is applied at the "child" 
+
+note the difference between these two examples
+
+
+Padding(                // you added Padding widget "as a parent of the container"  so now "Container" is a child
+              padding: const EdgeInsets.all(12.0),
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(15)),
+                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20.0),
+                      child: Icon(
+                        Icons.mail,
+                        size: 30,
+                        color: Color(0xff314f6a),
+                      ),
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+
+and 
+
+Container(
+  padding: EdgeInsets.symmetric(horizontal: 32, verical:8),      //// you also added "Padding" here,  but the effect will applied in the child which is "Row" Widget not Container
+)
+// so in this example , there will be no chnage (as u didn't add Padding,  no effect)
+
+
+// that's becuase "Padding" is applied for "childs" not parent
