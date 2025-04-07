@@ -1,0 +1,3 @@
+create new folder for images and another one for fonts, and download the font and add it to the folder
+then add the image or font path in the "assets" section in the pubspec.yaml file
+after that press on "pub get"  to  load the file and apply changes
