@@ -37,3 +37,12 @@ Container(
 
 
 // that's becuase "Padding" is applied for "childs" not parent
+
+
+---------------------------- margin ------------------------------------------
+margin is used as atrribute only NOT Widget
+margin apply the effect on the Parent Widget itself NOT the child
+so the difference between "padding" & "margin"
+
+padding  =>> apply the effect on the "child"
+margin   =>> apply the effect on "the Widget where it exist", NOT the Child
