@@ -1,0 +1,29 @@
+ListTile() Widget  is ready Widget that u can use , to ease the work for u , instead to build everything from scratch, ListTile help u to do that
+
+ListTile contains   "leading" (first thing), "title"(second thing), "sub-title"     like Scaffold contains "app Bar, "body", "floating Action Button"
+
+
+ListTile(
+  leading:       // is the first thing appear
+)
+
+            -------------  Card() Widget  ------------
+
+- ListTile()  most of times used with Card() Widget ,   to add shape and background  for ListTile()
+
+Card(
+  child: ListTile(
+    leading: Icon(
+      Icongs.location_pin,
+      color: Color(0xFFABCDEFGH),
+    )
+    title: Text('NearBY_U'),
+  )
+)
+
+
+
+
+conclusion:   ListTile()   is  more easier to use than Container then use Row() widget , then use Spacer() or Padding()
+
+cuz ListTile()   have Circular Shape Border    and   margin     and  Row        by-default !!,   just need to use Card()  and ListTile()
