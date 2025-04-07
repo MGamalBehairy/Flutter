@@ -1,0 +1,2 @@
+const in flutter, make the code faster, cuz when u rebuild , the const section will not rebuild again,  (skip the "const" part)
+
