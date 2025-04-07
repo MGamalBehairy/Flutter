@@ -1,0 +1,58 @@
+the container take space of the child
+
+if the child of the container take 200 width and 200 height, then the container will also take this space
+
+but if the container was empty (has no childs) then the container will take all free space in the screen
+
+"Every Widget take space of the Child, every widget (container, column, row ...)"
+
+
+
+ Spacer(
+   flex: 1      // 1 دي نسبة ، يعني لو كان في Spacer و flex واحده بس وقيمة ال flex بواحد ، يعني كدا بتقوله حط مسافة علي قد ما قتدر
+               // اما لو في كذا Spacer وجواها flex ، يبقي كدا نسبة وتناسب
+ )
+ Icon(
+   Icons.mail,
+   size: 30,
+ )
+ Spacer(
+   flex: 2    //  دي هتاخد مسافة ضعف الاولي  ، لان فليكس   باتنين
+ )
+ Icon(
+   Icons.phone,
+ )
+ Sacer(
+   flex: 3  //هتاخد مسافة 3 اضعاف الاولي 
+ )
+
+
+ Ex.
+
+ Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(15)),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Icon(
+                      Icons.mail,
+                      size: 30,
+                      color: Color(0xff314f6a),
+                    ),
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Text('mohammedgamal2610@gmail.com',
+                        style: TextStyle(fontSize: 20)),
+                    Spacer(
+                      flex: 3,
+                    ),
+                  ],
+                ),
+              ),
