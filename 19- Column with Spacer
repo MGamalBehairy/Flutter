@@ -6,4 +6,7 @@ or u can use SizedBox() ,
 
 u need to know how Spacer() Work,  and if u didn't set the boundaries, u get an error,    if   the Column was bounded not free 
 
+---------- so how Column is not Bounded (unknow height) ? =>>  when it depends on the chidren of the Column --------------
+
+
 "section 8: Basketball Pints Counter,   UI done part two"
