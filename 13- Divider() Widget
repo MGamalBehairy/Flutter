@@ -1,9 +1,15 @@
 Divider is a line, seperate between two things
 
-            Divider(
+            Divider(                                                                                    // in case   "Column" Widget   (horizontally)
               color: Color(0xFF6C8090),
               thickness: 2,
               indent: 60,                // بتقوله  يسيب من ناحية "الشمال"  بمقدار 60
               endIndent: 60,            // بتقوله  يسيب من ناحية "اليمين"  بمقدار 60
               height: 10    // this padding from upper-side and down-side
             ),
+
+
+
+if u need to use Divider In Row (Vertical)
+use:
+VerticalDivider(),
