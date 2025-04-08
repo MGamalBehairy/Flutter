@@ -1,0 +1,6 @@
+to fill all width with color,   =>>>   width: double.infinity    
+
+to move container (or any widget) use  "alignment" attribute
+
+alignment: Alignment.centerLeft,
+alignment: Alignment.topRight,
