@@ -1,5 +1,5 @@
 when use Column widget with Spacer widget, u may face an Exception,   cuz  Spacer  want to take as much as it could from the screen,  but to do this , u need to add "height" to the Column Widget , to make it bounded
-or u can use SizedBox() ,      
+or u can use SizedBox(height: 100,) ,      
 
 
 -------------------------- so if the "Column()" has not determine "height" (unbounded) ,  and try to use Spacer(),  then u will get an  Exception -----------
