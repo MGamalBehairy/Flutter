@@ -56,3 +56,16 @@ but if the container was empty (has no childs) then the container will take all 
                   ],
                 ),
               ),
+
+- so Spacer()  change according to free space left in the screen,   but if u need fixed size (space "vertical or horizontal"),  then best way to use: SizedBox()
+
+SizedBox(
+ height: 16,  // now u have "fixed space" 16 vertically , and will not change
+),
+
+
+
+- ملحوظة  : لو عايز  تحط row جوا column او العكس
+متعملش wrap with widget
+لكن اعمل wrap with Row 
+عشان wrap with widget هيحطك جوا child ودا غلط وهتضطر تعدل لسه
