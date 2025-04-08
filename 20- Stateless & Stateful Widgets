@@ -1,0 +1,55 @@
+Stateless =>>  دي widget بس مش هتتغير نهائي تاني
+لكن تقدر تغير القيمة ، عن طريق انك تعمل hot reload 
+وال hot reload دي بتسمح ال widget وبتنيها تاني
+لكن في الحقيقة ال stateless widget مش بتتغير ، لكن انت بتمسحها وبتنشئها من اول وجديد
+
+يبقي لو عندك  UI ثابت لا يتغير ، هنستخدم  Stateless widget
+
+
+-----------------  Stateful Widget  --------------
+لكن لو عندنا UI قيمته بتتغير هنستخدم Stateful Widget
+
+
+to convert from Stateless Widget to Stateful Widget
+
+stop on Stateless Widget and press " ctrl + . "  then choose =>> convert to Stateful Widget
+
+
+and when convert to Stateful Widget =>> it will create   
+1-  Stateful Widget (class)
+2- State Object    (the same as Stateless Widget code ,   but just extends State<Class_Name>)
+
+ال Stateful Widget 
+بتحتوي علي ال Widget ذات نفسها 
+2-  حالة (قيمة) ال  Widget
+عشان لو احتجت تغير القيمة من خلال اليوزر ، يقدر يغير القيمة
+عشان كدا ال Stateful widget 
+فيها ال Stateful Widget ذات نفسها
+وال State او الحالة بتاعت ال Widget
+
+
+
+
+جوا  ال Stateful Widget الاولي
+هتلاقي method اسمها createState
+ودي ال method المسؤولة انها تنشيء ال State Widget التانيه
+وبتعمل return لل class بتاع ال State التانيه
+
+
+Ex.
+
+class ClassName extends StatefulWidget {
+  @override
+  State<ClassName> createState() => ClassName();
+}
+class _ClassName extends State<ClassName>{
+  // code
+}
+
+
+--------------------------- setState(){};
+Very Important
+at any changes u want to apply, u need to put setState(){}; method,   it tells flutter the state u have is old , so reload the state again and take the new value 
+
+
+"lecture 125"
