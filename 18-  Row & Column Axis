@@ -1,0 +1,13 @@
+to know wich one is the main or cross axis, 
+
+look how it will order, for example Row()  will order the widgets in the x-axis,  so x-axis is the "main"  and y-axis is the cross
+
+
+and Column()   order widgets in the y-axis,    so the y-axis  will be the main-axis ....
+
+
+
+
+to give equal spaces between widgets: 
+Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,        // spaceEvenly   will give Equal spaces 
