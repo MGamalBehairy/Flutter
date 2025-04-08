@@ -2,6 +2,8 @@ when use Column widget with Spacer widget, u may face an Exception,   cuz  Space
 or u can use SizedBox() ,      
 
 
-so again , u need to know how Spacer() Work,  and if u didn't set the boundaries, u get an error,    if   the Column was bounded not free 
+-------------------------- so if the "Column()" has not determine "height" (bounderies) ,  and try to use Spacer(),  then u will get an  Exception -----------
+
+u need to know how Spacer() Work,  and if u didn't set the boundaries, u get an error,    if   the Column was bounded not free 
 
 "section 8: Basketball Pints Counter,   UI done part two"
