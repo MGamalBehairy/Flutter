@@ -47,9 +47,15 @@ class _ClassName extends State<ClassName>{
 }
 
 
---------------------------- setState(){};
-Very Important
-at any changes u want to apply, u need to put setState(){}; method,   it tells flutter the state u have is old , so reload the state again and take the new value ,  so it will rebuild  the Widget again
+                  --------------------------- setState(  (){}  );  ---------------------
+Very Important:
+setState( (){} );    ==>>  it accept Anonymous Function ,    u can leave it empty , or put between the paranthesses the things u want to apply changes when it happens
+
+at any changes u want to apply, u need to put setState(  (){}  ); method,   it tells flutter the state u have is old , so reload the state again and take the new value ,  so it will rebuild  the Widget again
+
+setState( (){
+  teamAPoints++;      // when team A Points increase,  then set state (update the state) =>> (rebuild the State Widget again)
+});
 
 
 "lecture 125"
