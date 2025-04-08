@@ -1,0 +1,13 @@
+ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange,
+                        foregroundColor: Colors.black,
+                        minimumSize: Size(150, 50),          // at least will take this size "or more depends on the text of the button"
+                        // fixedSize: Size(150, 50),        // fixed size no matter the length of the text
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'Add 1 Point',
+                        style: TextStyle(color: Colors.black, fontSize: 24),
+                      ),
+                    ),
