@@ -11,3 +11,17 @@ ElevatedButton(
                         style: TextStyle(color: Colors.black, fontSize: 24),
                       ),
                     ),
+
+
+
+
+when call ElevatedButton() Widget,   it must accept required function     and  set  onPressed parameter 
+onPressed  =>> is the action what will happen when u press this Button
+
+
+
+void actionButton(){}
+ElevatedButton(
+  onPressed:  (){},        //    (){}    is  anonymous Function,  cuz we don't need to call this function again
+  // onPressed: actionButton, // or u can put normal function, but note u pass the function,  NOT Call it,  so u can't make it like this   onPressed: actionButton() // error u can't put (), cuz u pass the function as a value not calling it
+)
