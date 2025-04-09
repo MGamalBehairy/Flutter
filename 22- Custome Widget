@@ -1,0 +1,43 @@
+how to create Custome Widget
+
+by creating Stateless OR Stateful Widget,  and give it name , and then use it,    i's like Widget u use  (Container, ListTile, SizedBox,...)
+
+
+
+class Category extends StatelessWidget {
+  Category(this.text, this.color); // give parameters to the Constructor
+
+  String text;      // create a variable
+  Color? color;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: double.infinity,
+      height: 100,
+      child: Container(
+        alignment: Alignment.centerLeft,
+        color: color, // // use the variable, Not Static Value
+        child: Padding(
+          padding: const EdgeInsets.only(left: 16.0),
+          child: Text(
+            text!,  // use the variable, Not Static Value
+            style: TextStyle(color: Colors.white, fontSize: 30),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+Category(    // create first Category
+  'First Container';  // This is an argument for "text" parameter of type "String"
+   Colors.white;      // This is an argument for "color" parameter of Type "Color"
+)
+
+Category(
+  text  = 'second Container';
+  color = Colors.blue
+)
+
+
+// Now if u want to change for example the fontSize of the text,   u just need to change it in the Widget (Original) u created , and it will apply in all widgets u used 
