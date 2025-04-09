@@ -1,0 +1,5 @@
+GestureDetector  =>> make anything (Container, Image, ListTile,...)  clickable   (to navigate from screen or page to another page)
+
+GestureDetector (
+  onTap:  (){print("clicked");}             // =>> onTap = one Click
+)
