@@ -1,0 +1,17 @@
+to Navigate from screen to other use   "Navigator" class
+
+Navigator.push()    // push   is    put screen u want to switch over the current screen,    so now u have 2 screens ,   the new screen  over the old one(screen)
+push =>> تحط اسكرين  فوق الاسكرين اللي موجوده 
+
+
+push (context, MaterialPageRoute)    // context =>>> مكان ال widget في الاسكرين ، عشان  لما تحط اسكرين او  ويدكت جديه تعرف مكانها فين في الشاشة اصلا
+                         // MaterialPageRoute =>> كلاس المسؤول انه يبني widget  فوق ال current screen
+
+  "MaterialPageRoute"   بيعمل return ل Widget  ،  وال Widget دي اللي هتتحط فوق ال screen     ،  يعني باختصار ال Widget اللي بيرجعها ال MaterialPageRoute هي ال screen الجديدة
+
+Structure:
+
+Navigator.push(context,
+                  MaterialPageRoute(builder: (BuildContext context) {
+                return NewScreenWidget_Name();
+              }));
