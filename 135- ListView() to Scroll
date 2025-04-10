@@ -1,0 +1,1 @@
+use ListView() Widget instead of Column()   to  be able to scroll
