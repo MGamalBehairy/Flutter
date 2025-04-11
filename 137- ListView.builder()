@@ -1,0 +1,35 @@
+ListViewBuilder()  widget      =>> is a widget like ListView,  but have ready loop u can use with simple
+
+
+ListView.builder(
+  itemCount: List.length,
+  itemBuilder: (context, num) {                //  num: is the current iteration number (index number),      لو عايز تعرف انت في رقم كام ، ممكن تطبع ال num    ,   print(num);
+    return Item(number: numbersList[num])
+  }
+)
+
+
+
+
+
+
+
+another way but with  Normal Loop
+
+List<Widget> getList(List<Numbers> numbers) {
+  List<Widget> itemList = [];
+  for (var i = 0; i < numbers.length; i++) {
+    itemList.add(Item(number: numbers[i]));
+  }
+  return itemList;
+}
+
+
+// but ListView.builder is more easier  and more efficient
+
+ال ListView   بتبني  ال Widgets كلها مرة واحده
+اما
+ال ListView.builder   بتبني  Widget علي قد الشاشة بس
+وبعدين لما تعمل scroll بتبني ال widget الجديدة
+وبكدا يبقي موفره جدا في ال resources
+
